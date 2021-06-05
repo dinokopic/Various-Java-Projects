@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="CENTER" hgap="10.0" prefHeight="255.0" prefWidth="200.0" vgap="15.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ba.unsa.etf.rpr.tutorijal05.Controller">
+   <stylesheets>
+      <URL value="@cssStyle.css" />
+   </stylesheets>
+   <rowConstraints>
+      <RowConstraints valignment="CENTER" vgrow="ALWAYS" />
+      <RowConstraints valignment="CENTER" vgrow="ALWAYS" />
+      <RowConstraints valignment="CENTER" vgrow="ALWAYS" />
+      <RowConstraints valignment="CENTER" vgrow="ALWAYS" />
+      <RowConstraints valignment="CENTER" vgrow="ALWAYS" />
+      <RowConstraints valignment="CENTER" vgrow="ALWAYS" />
+   </rowConstraints>
+   <columnConstraints>
+      <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+      <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+      <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+      <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+   </columnConstraints>
+   <children>
+      <Button fx:id="modBtn" maxHeight="Infinity" maxWidth="Infinity" mnemonicParsing="false" text="\%" GridPane.rowIndex="1" />
+      <Button fx:id="divBtn" maxHeight="Infinity" maxWidth="Infinity" mnemonicParsing="false" text="/" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <Button fx:id="mulBtn" maxHeight="Infinity" maxWidth="Infinity" mnemonicParsing="false" text="x" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+      <Button fx:id="subBtn" maxHeight="Infinity" maxWidth="Infinity" mnemonicParsing="false" onAction="#operation" text="-" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+      <Button fx:id="btn7" maxHeight="Infinity" maxWidth="Infinity" mnemonicParsing="false" onAction="#numBtnPress" text="7" GridPane.rowIndex="2" />
+      <Button fx:id="btn8" maxHeight="Infinity" maxWidth="Infinity" mnemonicParsing="false" onAction="#numBtnPress" text="8" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <Button fx:id="btn9" maxHeight="Infinity" maxWidth="Infinity" mnemonicParsing="false" onAction="#numBtnPress" text="9" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+      <Button fx:id="plusBtn" maxHeight="Infinity" maxWidth="Infinity" mnemonicParsing="false" onAction="#operation" text="+" GridPane.columnIndex="3" GridPane.rowIndex="2" GridPane.rowSpan="2" GridPane.valignment="CENTER" />
+      <Button fx:id="btn4" maxHeight="Infinity" maxWidth="Infinity" mnemonicParsing="false" onAction="#numBtnPress" text="4" GridPane.rowIndex="3" />
+      <Button fx:id="btn5" maxHeight="Infinity" maxWidth="Infinity" mnemonicParsing="false" onAction="#numBtnPress" text="5" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <Button fx:id="btn6" maxHeight="Infinity" maxWidth="Infinity" mnemonicParsing="false" onAction="#numBtnPress" text="6" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+      <Button fx:id="btn1" maxHeight="Infinity" maxWidth="Infinity" mnemonicParsing="false" onAction="#numBtnPress" text="1" GridPane.rowIndex="4" />
+      <Button fx:id="btn2" maxHeight="Infinity" maxWidth="Infinity" mnemonicParsing="false" onAction="#numBtnPress" text="2" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+      <Button fx:id="btn3" maxHeight="Infinity" maxWidth="Infinity" mnemonicParsing="false" onAction="#numBtnPress" text="3" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+      <Button fx:id="equalsBtn" maxHeight="Infinity" maxWidth="Infinity" mnemonicParsing="false" onAction="#operation" prefHeight="69.0" prefWidth="62.0" text="=" GridPane.columnIndex="3" GridPane.rowIndex="4" GridPane.rowSpan="2" />
+      <Button fx:id="btn0" maxHeight="Infinity" maxWidth="Infinity" mnemonicParsing="false" onAction="#numBtnPress" text="0" GridPane.columnSpan="2" GridPane.rowIndex="5" />
+      <Button fx:id="dotBtn" maxHeight="Infinity" maxWidth="Infinity" mnemonicParsing="false" onAction="#numBtnPress" text="." GridPane.columnIndex="2" GridPane.rowIndex="5" />
+      <Label fx:id="display" maxHeight="Infinity" maxWidth="Infinity" text="0" GridPane.columnSpan="4" />
+   </children>
+   <padding>
+      <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+   </padding>
+</GridPane>

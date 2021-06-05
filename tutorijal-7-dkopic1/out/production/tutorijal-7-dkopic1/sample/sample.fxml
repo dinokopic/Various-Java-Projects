@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" vgap="10" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+   <columnConstraints>
+      <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+      <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+      <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+      <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints valignment="CENTER" vgrow="ALWAYS" />
+      <RowConstraints valignment="CENTER" vgrow="ALWAYS" />
+      <RowConstraints valignment="CENTER" vgrow="ALWAYS" />
+      <RowConstraints valignment="CENTER" vgrow="ALWAYS" />
+      <RowConstraints valignment="CENTER" vgrow="ALWAYS" />
+      <RowConstraints valignment="CENTER" vgrow="ALWAYS" />
+
+   </rowConstraints>
+   <children>
+      <ListView fx:id="listKorisnici" maxHeight="Infinity" maxWidth="Infinity" minHeight="-Infinity" minWidth="-Infinity" GridPane.columnSpan="2" GridPane.rowSpan="5" />
+      <PasswordField fx:id="fldPass" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+      <TextField fx:id="fldIme" GridPane.columnIndex="3" />
+      <TextField fx:id="fldPrezime" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+      <TextField fx:id="fldEmail" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+      <TextField fx:id="fldUsername" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+      <Label text="Ime:" GridPane.columnIndex="2" />
+      <Label text="Prezime:" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+      <Label text="E-mail:" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+      <Label text="Korisničko ime:" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+      <Label text="Lozinka:" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+      <Button mnemonicParsing="false" onAction="#dodaj" prefHeight="26.0" prefWidth="105.0" text="Dodaj" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+      <Button mnemonicParsing="false" onAction="#zatvori" prefHeight="26.0" prefWidth="171.0" text="Kraj" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+   </children>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</GridPane>

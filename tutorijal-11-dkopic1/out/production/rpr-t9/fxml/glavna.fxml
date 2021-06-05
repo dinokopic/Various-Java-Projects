@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane prefHeight="400.0" prefWidth="662.0" styleClass="root" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+    <center>
+        <GridPane>
+            <children>
+                <TableView fx:id="tableViewGradovi" GridPane.columnIndex="0" GridPane.columnSpan="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="0" GridPane.vgrow="ALWAYS">
+                    <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                    </columnResizePolicy>
+                    <columns>
+                        <TableColumn fx:id="colGradId" prefWidth="51.0" text="%identifikator">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="testNumber" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn fx:id="colGradNaziv" prefWidth="219.0" text="%naziv">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="testName" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn fx:id="colGradStanovnika" text="%stanovnika">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="testTime" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn fx:id="colGradDrzava" text="%država">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="bestMatch" />
+                            </cellValueFactory>
+                        </TableColumn>
+                    </columns>
+                    <items>
+                    </items>
+                </TableView>
+            </children>
+            <columnConstraints>
+                <ColumnConstraints />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints />
+            </rowConstraints>
+        </GridPane>
+    </center>
+    <right>
+        <VBox alignment="TOP_CENTER" maxWidth="120.0" minWidth="120.0" prefHeight="200.0" prefWidth="120.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button fx:id="btnDodajGrad" mnemonicParsing="false" onAction="#addGrad" prefHeight="25.0" prefWidth="110.0" text="%dodajGrad">
+                    <VBox.margin>
+                        <Insets top="4.0" />
+                    </VBox.margin>
+                </Button>
+                <Button fx:id="btnDodajDrzavu" mnemonicParsing="false" onAction="#addDrzava" prefHeight="25.0" prefWidth="110.0" text="%dodajDrzavu">
+                    <VBox.margin>
+                        <Insets top="4.0" />
+                    </VBox.margin>
+                </Button>
+                <Button fx:id="btnIzmijeniGrad" mnemonicParsing="false" onAction="#editGrad" prefHeight="25.0" prefWidth="110.0" text="%izmijeniGrad">
+                    <VBox.margin>
+                        <Insets top="4.0" />
+                    </VBox.margin>
+                </Button>
+                <Button fx:id="btnObrisiGrad" mnemonicParsing="false" onAction="#onObrisi" prefHeight="25.0" prefWidth="110.0" text="%obrisiGrad">
+                    <VBox.margin>
+                        <Insets top="4.0" />
+                    </VBox.margin>
+                </Button>
+            <Button fx:id="btnStampa" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#stampajGradove" text="%štampa">
+               <VBox.margin>
+                  <Insets left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btnJezik" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onJezik" text="%jezik">
+               <VBox.margin>
+                  <Insets left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </Button>
+            </children>
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets></VBox>
+    </right>
+</BorderPane>
